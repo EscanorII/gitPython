@@ -1,0 +1,29 @@
+from tkinter import *
+from random import *
+root = Tk()
+root.geometry("1400x900")
+
+colorG = "pink"
+
+canvas = Canvas(root,bg = "gray", width=1000, height=800)
+canvas.pack()
+
+canvas.create_oval(25, 25, 75, 75, fill = colorG,width=2)
+canvas.create_line(75, 50, 150,50,width=3)
+
+canvas.create_rectangle(150,25,200,75,fill = "red",width=2)
+
+canvas.create_line(200, 50, 250,50,width=3)
+canvas.create_line(250, 25, 250,150,width=3)
+canvas.create_line(250, 50, 300,50,width=3)
+
+canvas.create_rectangle(300,25,350,75,fill = "red",width=2)
+
+canvas.create_line(350, 50, 550,50,width=3)
+canvas.create_line(550, 25, 550,150,width=3)
+canvas.create_line(550, 50, 600,50,width=3)
+
+canvas.create_rectangle(600,25,650,75,fill = "red",width=2)
+
+canvas.create_text(50, 50, text = "G",font=("Purisa", 24));
+root.mainloop()
